@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.VentanaHandler">
+   <children>
+      <MenuBar fx:id="helpBtn" layoutY="2.0" prefHeight="25.0" prefWidth="320.0">
+        <menus>
+          <Menu fx:id="ayudaBtn" mnemonicParsing="false" text="Ayuda">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ImageView fx:id="displayImage" fitHeight="150.0" fitWidth="200.0" layoutX="29.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/1.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="displayText" layoutX="64.0" layoutY="216.0" text="1 Un Martillo" />
+      <Button fx:id="initPauseBtn" layoutX="216.0" layoutY="66.0" mnemonicParsing="false" onAction="#iniciar" prefHeight="40.0" prefWidth="74.0" text="Iniciar" />
+      <Button fx:id="exitBtn" layoutX="235.0" layoutY="147.0" mnemonicParsing="false" onAction="#salir" text="Salir" />
+      <Button fx:id="reiniciarBtn" layoutX="223.0" layoutY="113.0" mnemonicParsing="false" onAction="#reiniciar" text="Reiniciar" />
+   </children>
+</AnchorPane>
