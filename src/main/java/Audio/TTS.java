@@ -14,7 +14,7 @@ public class TTS
     public void initialConfiguration(){
         // Recibe las credenciales para configurar el text-to-speech.
        try {
-            //ServiceAccountCredentials serviceAccountCredentials = ServiceAccountCredentials.fromStream(getClass().getClassLoader().getResourceAsStream("credentials.json"));
+            ServiceAccountCredentials serviceAccountCredentials = ServiceAccountCredentials.fromStream(getClass().getClassLoader().getResourceAsStream("credentials.json"));
             TextToSpeechSettings settings = TextToSpeechSettings.newBuilder()
                     .setCredentialsProvider(FixedCredentialsProvider
                             .create(serviceAccountCredentials)).build();
